@@ -15,7 +15,7 @@
 			"indentWidth": 2,
 			"quoteStyle": "single",
 			"arrowParentheses": "always",
-			"semicolons": "asNeeded",
+			"semicolons": "always",
 			"bracketSameLine": false,
 			"bracketSpacing": true,
 			"lineWidth": 80,
