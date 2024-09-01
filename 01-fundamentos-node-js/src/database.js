@@ -7,10 +7,10 @@ export class Database {
 
 	constructor() {
 		fs.readFile(databasePath, "utf8")
-			.then(() => {
+			.then((data) => {
 				this.#database = JSON.parse(data);
 			})
-			.catch(() => {
+			.catch((error) => {
 				this.#persist();
 			});
 	}
