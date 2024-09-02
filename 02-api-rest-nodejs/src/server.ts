@@ -6,7 +6,7 @@ const app = fastify();
 
 // GET, POST, PUT, PATCH, DELETE
 
-app.register(transactionsRoutes);
+app.register(transactionsRoutes, { prefix: "/transactions" });
 
 app.listen({ port: env.PORT }).then(() => {
 	console.log("App is running on port 3333");
